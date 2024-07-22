@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+location=$(pwd)
+app="EList"
+fLocation=$location"/"$app
+
+#Change to desired location
+echo "#define HASHFILE \"$location/hash\""      >> filenames.h
+echo "#define FILENAME \"$location/list.txt\""  >> filenames.h
+echo "#define TFILENAME \"$location/tlist.txt\"" >> filenames.h
+echo "#define ENFILENAME \"$location/list.enc\"">> filenames.h
+
+gcc to_do_ListE.c -o $app -lssl -lcrypto
+
+echo "loc: "$location
+echo "Full: "$fLocation
+
+echo $fLocation > li
+sudo chmod +x li
+
+sudo cp li /usr/bin/li
