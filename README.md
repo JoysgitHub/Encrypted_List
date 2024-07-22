@@ -8,6 +8,6 @@ sudo apt-get install libssl-dev openssl
 Manual compile:<br>
 gcc .\to_do_ListE.c -o .\to_do_ListE -lssl -lcrypto
 
-Auto Install:<br>
+Auto Install Linux:<br>
 sudo chmod +x install
 ./install
