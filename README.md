@@ -5,5 +5,9 @@ Requires OpenSSL
 <br>
 sudo apt-get install libssl-dev openssl
 <br>
-To compile:<br>
+Manual compile:<br>
 gcc .\to_do_ListE.c -o .\to_do_ListE -lssl -lcrypto
+
+Auto Install:<br>
+sudo chmod +x install
+./install
