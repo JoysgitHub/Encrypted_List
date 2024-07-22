@@ -4,12 +4,12 @@
 #include <signal.h>
 #include <stdbool.h>
 #include <openssl/sha.h>
-
+#include "filenames.h"
 //Change to desired location
-#define HASHFILE "hash"
-#define FILENAME "list.txt"
-#define TFILENAME "list.txt"
-#define ENFILENAME "list.enc"
+//#define HASHFILE "hash"
+//#define FILENAME "list.txt"
+//#define TFILENAME "list.txt"
+//#define ENFILENAME "list.enc"
 
 int loginR;
 char password[200];
